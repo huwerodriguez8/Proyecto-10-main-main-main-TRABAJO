@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box}
+    
+    /* Set height of body and the document to 100% */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+    
+    /* Style tab links */
+    .tablink {
+      background-color: #555;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 25%;
+    }
+    
+    .tablink:hover {
+      background-color: #777;
+    }
+    
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+      color: white;
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+    }
+    
+    #Home {background-color: rgb(255, 255, 255);}
+    #News {background-color: green;}
+    #Contact {background-color: blue;}
+    #About {background-color: orange;}
+    </style>
+  <title>Dewigner</title>
+  <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+  <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+  <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+  
+  <div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <header>
+      <img src="img/logo.png" width="150" height="150" />
+     <center><img src="img/dewigner (1).png" width="400" height="100"></center>
+      <fieldset style="background-color: rgb(247, 245, 245)">
+       <legend>
+        <b><i>COMO SURGIO ?</i></b>
+       </legend>
+   
+  
+   <p>
+    <fieldset style="background-color: rgb(255, 22, 22)">
+           <h2><i>Esta empresa surgio gracias al pensamiento de poder ayudar a las personas
+               para poder lograr su comercio digital por medio de la creacion de paginas
+               web de su empresa con el diseño y opciones que quieran ayudandolos a crecer exponencialmente su economia, tambien los
+               apoyaremos con la publicidad online a como guste el cliente.
+           <p>La vision futura de nuestra empresa es poder progresar con las creaciones y ventas de las paginas web y despues lograr la venta de hosting para lograr el alojamiento web de la empresa de nuestro cliente y consiga almacenar todos los archivos y datos necesarios para que tu sitio web funcione correctamente
+          </fieldset>
+           </p></i>
+         
+    
+       <center><img src="video/IlliteratePoliteLeech-size_restricted.gif" >
+       </center>
+      </fieldset>
+   
+      <ul>
+      <h2> 
+   <fieldset style="color: rgb(255, 0, 0)">Objetivos Generales</fieldset>
+      
+   </h2>
+   
+   <h3>
+    <fieldset style="color: rgb(19, 18, 18)">
+       <li><i>Formular un plan de negocios para la creación de una unidad productiva dedicada al apoyo de publicidad y comercializacion de los negocios por medio de paginas web creando una mayor expansion de comercio en el emprendimiento del cliente generando ganancias y comodidad.</i> </li>
+      </fieldset>
+   </h3>
+       
+         <h2> 
+           <fieldset style="color: rgb(255, 0, 0)">Objetvos Específicos</fieldset>
+       </h2>
+       <h3>
+            
+        <fieldset style="color: rgb(15, 14, 14)"
+         <p><i>1. Desarrollar páginas web para negocios que requieran mayor incorporación 
+           y mejor accesibilidad al mercado digital.</i></p>
+         <p><i>2. Brindar asesorias por medio de socios especializados en la comercializacion por medio de páginas web, almacenamiento de diseños, etc.</i></p>
+         <p><i>3.  Adquirir  computadores,inteligencia artificial, internet,desarrolladores, socios estrateticoS y ademas calcular la viabilidad financiera y economica  dependiendo del personal de trabajo, proyectos y ganacias que podamos producir a los comienzos de nuestra empresa y al pasar un tiempo de la creacion.</i></p>
+        </fieldset>
+       </h3>
+      </ul>
+     </header>
+  </div>
+  
+  <div id="News" class="tabcontent">
+    <h3>News</h3>
+    <p>En Edolas, Lucy parece haberse enamorado de Natsu Dragion mientras se 
+      mostraba preocupada cuando ella lo abrazó y tiende a mirar hacia otro lado
+       cuando él le hace una pregunta.!</p> 
+  </div>
+  
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+  </div>
+  
+  <div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p>Who we are and what we do.</p>
+  </div>
+  
+  <script>
+  function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+     
+   
+
+ </body>
+ 
+</html>
